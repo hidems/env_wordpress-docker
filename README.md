@@ -8,6 +8,15 @@ docker-compose up -d
 ### phpmyadmin: http://localhost:8888/
 Access with root and password
 
+# Edit code
+It is necessary to change authority.
+
+Ex. Edit in directry `wp-content`
+```
+sudo chmod -R 777 wp-content
+sudo chown {username}:{username} -R wp-content
+```
+
 # All in One WP Migration
 Install `All in One WP Migration` in plugin menu.
 
